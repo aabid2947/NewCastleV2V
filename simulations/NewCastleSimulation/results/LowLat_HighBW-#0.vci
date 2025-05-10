@@ -1,0 +1,93 @@
+                                                                
+version 3
+run LowLat_HighBW-0-20250510-13:51:24-1692
+attr configname LowLat_HighBW
+attr datetime 20250510-13:51:24
+attr datetimef 20250510-135124
+attr experiment LowLat_HighBW
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvarsd ""
+attr iterationvarsf ""
+attr measurement ""
+attr network NewCastleAppScenario
+attr processid 1692
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+config image-path ../../../../../../../OneDrive/Desktop/veins/images
+config description "Low Latency (5ms), High Bandwidth (100Mbps)"
+config **.serverChannel.delay 5ms
+config **.serverChannel.datarate 100Mbps
+config network NewCastleAppScenario
+config sim-time-limit 300s
+config repeat 5
+config *.manager.updateInterval 0.1s
+config *.manager.host "\"localhost\""
+config *.manager.port 9999
+config *.manager.moduleType "\"org.car2x.veins.nodes.Car\""
+config *.manager.moduleName "\"node\""
+config *.manager.autoShutdown true
+config *.manager.launchConfig "xmldoc(\"NewCastle.launchd.xml\")"
+config *.**.scalar-recording true
+config *.**.vector-recording true
+config *.node[*].veinsmobility.setHostState false
+config *.node[*].veinsmobility.setHostSpeed false
+config *.node[*].mobilityType "\"org.car2x.veins.modules.mobility.traci.TraCIMobility\""
+config *.node[*].mobility.updateInterval 0.1s
+config *.node[*].mobility.setHostState false
+config *.node[*].applType "\"newcastlev2v.NewCastleApp.NewCastleApp\""
+config *.node[*].nicType "\"org.car2x.veins.modules.nic.Nic80211p\""
+config *.node[*].nic.phy80211p.usePropagationDelay true
+config *.node[*].nic.phy80211p.thermalNoise -110dBm
+config *.node[*].nic.phy80211p.sensitivity -95dBm
+config *.node[*].nic.phy80211p.maxTXPower 20mW
+config *.node[*].veinsmobility.x 0
+config *.node[*].veinsmobility.y 0
+config *.node[*].veinsmobility.z 0
+config *.node[*].appl.broadcastInterval 1s
+config *.node[*].appl.periodicLoggingInterval 0.1s
+config *.node[*].appl.safetyDistanceThreshold 10m
+config *.node[*].nic.debug true
+config *.node[*].nic.mac1609_4.debug true
+config *.node[*].nic.phy80211p.debug true
+config *.**.nic.mac1609_4.useServiceChannel false
+config *.**.nic.mac1609_4.txPower 20mW
+config *.**.nic.phy80211p.minPowerLevel -110dBm
+config *.**.nic.phy80211p.useNoiseFloor true
+config *.**.nic.phy80211p.noiseFloor -98dBm
+config NewCastleAppScenario.numCars 0
+config NewCastleAppScenario.playgroundSizeX 30000m
+config NewCastleAppScenario.playgroundSizeY 30000m
+config NewCastleAppScenario.playgroundSizeZ 30000m
+config *.**.nic.phy80211p.decider "xmldoc(\"config.xml\", \"/root/Decider\")"
+config *.**.nic.phy80211p.analogueModels "xmldoc(\"config.xml\", \"/root/AnalogueModels\")"
+config *.connectionManager.sendDirect false
+config *.connectionManager.maxInterfDist 10000m
+config **.serverChannel.delay 5ms
+config **.serverChannel.datarate 100Mbps
+
+vector 0 NewCastleAppScenario.node[0].nic.phy80211p RadioState ETV
+vector 1 NewCastleAppScenario.node[0].nic.phy80211p RadioChannel ETV
+vector 2 NewCastleAppScenario.manager posx ETV
+vector 3 NewCastleAppScenario.manager posy ETV
+vector 4 NewCastleAppScenario.manager speed ETV
+vector 5 NewCastleAppScenario.manager acceleration ETV
+vector 6 NewCastleAppScenario.manager co2emission ETV
+vector 7 NewCastleAppScenario.node[1].nic.phy80211p RadioState ETV
+vector 8 NewCastleAppScenario.node[1].nic.phy80211p RadioChannel ETV
+vector 9 NewCastleAppScenario.manager posx ETV
+vector 10 NewCastleAppScenario.manager posy ETV
+vector 11 NewCastleAppScenario.manager speed ETV
+vector 12 NewCastleAppScenario.manager acceleration ETV
+vector 13 NewCastleAppScenario.manager co2emission ETV
+vector 14 NewCastleAppScenario.node[2].nic.phy80211p RadioState ETV
+vector 15 NewCastleAppScenario.node[2].nic.phy80211p RadioChannel ETV
+vector 16 NewCastleAppScenario.manager posx ETV
+vector 17 NewCastleAppScenario.manager posy ETV
+vector 18 NewCastleAppScenario.manager speed ETV
+vector 19 NewCastleAppScenario.manager acceleration ETV
+vector 20 NewCastleAppScenario.manager co2emission ETV
+vector 21 NewCastleA

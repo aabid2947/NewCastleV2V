@@ -70,6 +70,9 @@ protected:
     // Veins method to override for received WSM messages
     // onWSM(): Called by the base class when a BaseFrame1609_4 message is received from lower layers
     virtual void onWSM(veins::BaseFrame1609_4* wsm) override;
+//    virtual void onWSA(veins::DemoServiceAdvertisement* wsa) override;
+    virtual void onBSM(veins::DemoSafetyMessage* bsm) override;
+
 
     // Custom method to create and send broadcast messages
     virtual void sendBroadcast();

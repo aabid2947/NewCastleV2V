@@ -1,16 +1,7 @@
------- Simulation Run Started at 4.1 ------
+------ Simulation Run Started at 6.1 ------
 Time [s]	LogType	Vehicle ID	PosX	PosY	Speed	NumNeighbors	AvgDistanceToNeighbors	SafetyLabel	Sender ID	Receiver ID	RxPosX	RxPosY	RxSpeed	RxAccel	Message Content	Delay [s]	Content Byte Length	Packet Byte Length
 # LogType: PERIODIC - Columns: Time, LogType, Vehicle ID, PosX, PosY, Speed, NumNeighbors, AvgDistanceToNeighbors, SafetyLabel
 # LogType: MESSAGE - Columns: Time, LogType, Receiver ID, N/A, N/A, N/A, N/A, N/A, N/A, Sender ID, Receiver ID, RxPosX, RxPosY, RxSpeed, RxAccel, Message Content, Delay [s], Content Byte Length
 # LogType: INPUT_READY - Columns: Time, LogType, Vehicle ID
 # LogType: ACTIVATION_SEND - Columns: Time, LogType, Sender ID, Receiver ID (Server), N/A, N/A, N/A, N/A, N/A, N/A, N/A, N/A, N/A, N/A, N/A, N/A, N/A, Packet Byte Length
 # LogType: GRADIENT_RECEIVE - Columns: Time, LogType, Receiver ID, N/A, N/A, N/A, N/A, N/A, N/A, Sender ID (Server), Receiver ID, N/A, N/A, N/A, N/A, N/A, N/A, Packet Byte Length
-4.11613	INPUT_READY	31
-4.11613	PERIODIC	31	5553.19	2569.04	0	0	0	0
-4.21613	INPUT_READY	31
-4.21613	PERIODIC	31	5553.19	2569.01	0.26	0	0	0
-4.31613	INPUT_READY	31
-4.31613	PERIODIC	31	5553.2	2568.96	0.52	0	0	0
-4.41613	INPUT_READY	31
-4.41613	PERIODIC	31	5553.21	2568.88	0.78	0	0	0
-4.4683	MESSAGE	31	5553.21	2568.88	0.78	N/A	N/A	N/A	33	31	5553.21	2568.88	0.78	0	"Node: 19, Pos: (5580.44,2309.29,0), SendTime:4.46824"	6.37663e-05s	52	0

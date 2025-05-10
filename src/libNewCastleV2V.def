@@ -5,19 +5,19 @@ EXPORTS
     _ZN12newcastlev2v12NewCastleApp13sendBroadcastEv @4
     _ZN12newcastlev2v12NewCastleApp20handlePositionUpdateEPN7omnetpp7cObjectE @5
     _ZN12newcastlev2v12NewCastleApp24handleGradientFromServerEPN5veins15BaseFrame1609_4E @6
-    _ZN12newcastlev2v12NewCastleApp5onWSMEPN5veins15BaseFrame1609_4E @7
-    _ZN12newcastlev2v12NewCastleApp6finishEv @8
-    _ZN12newcastlev2v12NewCastleAppC1Ev @9
-    _ZN12newcastlev2v12NewCastleAppC2Ev @10
-    _ZN12newcastlev2v12NewCastleAppD0Ev @11
-    _ZN12newcastlev2v12NewCastleAppD1Ev @12
-    _ZN12newcastlev2v12NewCastleAppD2Ev @13
-    _ZN5veins10BaseModule13receiveSignalEPN7omnetpp10cComponentEiPNS1_7cObjectE @14
-    _ZN5veins10BaseModule6finishEPN7omnetpp10cComponentEi @15
-    _ZN5veins13BaseApplLayer14handleUpperMsgEPN7omnetpp8cMessageE @16
-    _ZN5veins13BaseApplLayer18handleLowerControlEPN7omnetpp8cMessageE @17
-    _ZN5veins13BaseApplLayer18handleUpperControlEPN7omnetpp8cMessageE @18
-    _ZN5veins17DemoBaseApplLayer5onBSMEPNS_17DemoSafetyMessageE @19
+    _ZN12newcastlev2v12NewCastleApp5onBSMEPN5veins17DemoSafetyMessageE @7
+    _ZN12newcastlev2v12NewCastleApp5onWSMEPN5veins15BaseFrame1609_4E @8
+    _ZN12newcastlev2v12NewCastleApp6finishEv @9
+    _ZN12newcastlev2v12NewCastleAppC1Ev @10
+    _ZN12newcastlev2v12NewCastleAppC2Ev @11
+    _ZN12newcastlev2v12NewCastleAppD0Ev @12
+    _ZN12newcastlev2v12NewCastleAppD1Ev @13
+    _ZN12newcastlev2v12NewCastleAppD2Ev @14
+    _ZN5veins10BaseModule13receiveSignalEPN7omnetpp10cComponentEiPNS1_7cObjectE @15
+    _ZN5veins10BaseModule6finishEPN7omnetpp10cComponentEi @16
+    _ZN5veins13BaseApplLayer14handleUpperMsgEPN7omnetpp8cMessageE @17
+    _ZN5veins13BaseApplLayer18handleLowerControlEPN7omnetpp8cMessageE @18
+    _ZN5veins13BaseApplLayer18handleUpperControlEPN7omnetpp8cMessageE @19
     _ZN5veins17DemoBaseApplLayer5onWSAEPNS_23DemoServiceAdvertismentE @20
     _ZN7omnetpp10cComponent12recordScalarEPKcNS_7SimTimeES2_ @21
     _ZN7omnetpp10cComponent4emitEiPKNS_7cObjectEPS1_ @22

@@ -42,7 +42,10 @@ Define_Module(newcastlev2v::NewCastleApp);
 // Constructor (optional)
 NewCastleApp::NewCastleApp() {
     // Initialize member pointers to nullptr in the constructor
+
     broadcastTimer = nullptr;
+        periodicTimer = nullptr;  // Add this line
+
     // logFile is an object, doesn't need explicit nullptr initialization
 }
 
@@ -539,7 +542,7 @@ void NewCastleApp::handleGradientFromServer(veins::BaseFrame1609_4* msg) {
 // Implement this if your simulation sends and receives BSMs explicitly.
 // If you are only sending/receiving BaseFrame1609_4 as in your sendBroadcast(),
 // the onWSM method above will be called.
-/*
+
 void NewCastleApp::onBSM(veins::DemoSafetyMessage* bsm) {
     // Example: Log that a BSM was received
     EV_INFO << simTime().dbl() << ": Node " << getParentModule()->getId() << ": Received BSM from Node " << bsm->getSenderModuleId() << endl;
@@ -550,22 +553,22 @@ void NewCastleApp::onBSM(veins::DemoSafetyMessage* bsm) {
     // Delete the received message
     delete bsm;
 }
-*/
+
 
 // onWSA method: Called by DemoBaseApplLayer::handleLowerMsg for received DemoServiceAdvertisement (WSAs)
 // Implement this if your simulation sends and receives WSAs explicitly.
-/*
-void NewCastleApp::onWSA(veins::DemoServiceAdvertisement* wsa) {
-    // Example: Log that a WSA was received
-    EV_INFO << simTime().dbl() << ": Node " << getParentModule()->getId() << ": Received WSA from Node " << wsa->getSenderModuleId() << endl;
 
-    // If you want to log WSAs to your file, add logging code here similar to onWSM.
-    // Be mindful of the specific fields available in DemoServiceAdvertisement.
-
-    // Delete the received message
-    delete wsa;
-}
-*/
+//void NewCastleApp::onWSA(veins::DemoServiceAdvertisement* wsa) {
+//    // Example: Log that a WSA was received
+//    EV_INFO << simTime().dbl() << ": Node " << getParentModule()->getId() << ": Received WSA from Node " << wsa->getSenderModuleId() << endl;
+//
+//    // If you want to log WSAs to your file, add logging code here similar to onWSM.
+//    // Be mindful of the specific fields available in DemoServiceAdvertisement.
+//
+//    // Delete the received message
+//    delete wsa;
+//}
+//*/
 
 // handlePositionUpdate method: Called by DemoBaseApplLayer when the node's position is updated
 // You can add custom logic here that needs to run whenever the vehicle moves.
