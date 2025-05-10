@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+
+<launch>
+    <copy file="NewCastle.sumo.cfg" type="config"/>
+    <copy file="NewCastle.net.xml"/>
+    <copy file="NewCastle.rou.xml"/>
+    <copy file="NewCastle.poly.xml"/> 
+    <basedir path="C:/Users/aabid/Downloads/omnetpp-6.1.0-windows-x86_64/omnetpp-6.1/samples/NewCastleV2V/simulations/NewCastleSimulation/"/>
+
+    <seed value="0"/>
+</launch>

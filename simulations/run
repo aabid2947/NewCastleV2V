@@ -1,0 +1,4 @@
+#!/bin/sh
+cd `dirname $0`
+../src/newcastlev2v -n .:../src $*
+# for shared lib, use: opp_run -l ../src/newcastlev2v -n .:../src $*
